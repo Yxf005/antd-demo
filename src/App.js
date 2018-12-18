@@ -1,28 +1,28 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import Button from "antd/lib/button";
 import "./App.css";
-import Name from "./Name";
 
-// let name = ["alex", "kobe"];
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: "Button"
+    };
+    // this.clickHandler = this.clickHandler.bind(this);
+  }
+
+  clickHandler = () => {
+    this.setState({
+      text: "Hi"
+    });
+  };
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Name title="alex" />
-          <p>
-            Edit <code> src / App.js </code> and save to reload.{" "}
-          </p>{" "}
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React{" "}
-          </a>{" "}
-        </header>{" "}
+        <Button type="primary" onClick={this.clickHandler}>
+          {" "}
+          {this.state.text}{" "}
+        </Button>{" "}
       </div>
     );
   }
