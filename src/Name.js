@@ -1,18 +1,15 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
-const propTypes = {
-  title: PropTypes.string.isRequired
-};
+// const propTypes = {
+//   title: PropTypes.string.isRequired
+// };
 
 class Name extends Component {
   componentWillMount() {}
 
   render() {
-    return <div>{this.props.title}</div>;
+    return <div> {"HI"} </div>;
   }
 }
-
-Name.propTypes = propTypes;
 
 export default Name;

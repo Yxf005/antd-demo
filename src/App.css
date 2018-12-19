@@ -1,8 +1,13 @@
 /* @import '~antd/dist/antd.css'; */
 
+body {
+  background: #f0f2f5;
+}
+
 .App {
-  text-align: center;
-  padding-top: 24px;
+  /* text-align: center; */
+  /* padding-top: 24px; */
+  background: #f0f2f5
 }
 
 .App-logo {
@@ -33,4 +38,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, .2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+.layout {
+  /* min-height: 100vh; */
 }
